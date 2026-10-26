@@ -521,7 +521,7 @@ const CONFIG = {
     { name:"Devgon", icon:"sun", time:"Morning · 11:00 AM", date:"Friday, 4 December",
       venue:"The Galgotias Hotel, Sector 23A, Gurugram - 122017", dress:"", bg:"", tint:"#FFF0C2" },
     { name:"Mehandi Raat", icon:"mehndi", time:"Evening · 7:00 PM", date:"Friday, 4 December",
-      venue:"The Colors Banquet, The NorthCap University Road, Chakkarpur, Sector 23A, Gurugram - 122017", dress:"", bg:"", tint:"#E3E1F4" },
+      venue:"The Colors Banquet, North Cap University Road, Cartarpuri, Sector 23A, Gurugram- 122017", dress:"", bg:"", tint:"#E3E1F4" },
     { name:"Baraat", icon:"mandap", time:"Evening · 7:00 PM", date:"Saturday, 5 December",
       venue:"The Deewan Palace, Near MCD Toll, Palam Vihar Road, Bijwasan, New Delhi - 110061", dress:"", bg:"", tint:"#F8CFC8" }
   ],
@@ -543,8 +543,8 @@ const CONFIG = {
   contacts: [
     { name:"Sidhant (Groom)",                    phone:"9619719054" },
     { name:"Sh. Susheel Koul (Groom's Father)",  phone:"9868814295" },
-    { name:"Vanshika Koul (Groom's Sister)",     phone:"8587849474" },
-    { name:"Smt. Shally (Groom's Mother)",       phone:"9315895722" }
+    { name:"Smt. Shally (Groom's Mother)",       phone:"9315895722" },
+    { name:"Vanshika Koul (Groom's Sister)",     phone:"8587849474" }
   ],
 
   hashtag: "#SidInIshq",
@@ -577,7 +577,6 @@ const CONFIG = {
     <p class="invite-kicker">With immense joy and love</p>
     <p class="invite-copy">We cordially invite you to celebrate the wedding ceremony of</p>
     <div class="invite-names"><span data-groom></span><i>&amp;</i><span data-bride></span></div>
-    <span class="invite-date" id="invDate"></span>
     <div><button class="btn" id="introBtn" type="button" style="margin-top:28px">Continue</button></div>
   </div>
 </div>
@@ -729,7 +728,6 @@ $$('[data-names]').forEach(e => e.textContent = `${C.groom} & ${C.bride}`);
 $$('[data-groom]').forEach(e => e.textContent = C.groom);
 $$('[data-bride]').forEach(e => e.textContent = C.bride);
 document.title = `${C.groom} & ${C.bride} - Wedding Invitation`;
-$('#invDate').textContent = `${C.dateDay} · ${C.dateNum} ${C.dateMonth}`;
 
 /* Blessing */
 $('#blText').innerHTML = C.blessing.text + (C.blessing.english ? `<span class="en">${C.blessing.english}</span>` : '');
